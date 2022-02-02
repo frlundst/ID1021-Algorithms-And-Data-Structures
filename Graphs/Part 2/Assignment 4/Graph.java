@@ -14,19 +14,6 @@ public class Graph {
             adj[i] = new Stack<Integer>();
     }
 
-    /*public Graph(Scanner scanner) throws IOException{
-        this(scanner.nextInt());
-        System.out.print("Number of edges; ");
-        int E = scanner.nextInt();
-        for(int i = 0; i < E; i++){
-            System.out.print("(" + i + ") Enter vertex: ");
-            int vertex = scanner.nextInt();
-            System.out.print("(" + i + ") Enter another vertex: ");
-            int anotherVertex = scanner.nextInt();
-            addEdge(vertex, anotherVertex);
-        }
-    }*/
-
     public void addEdge(int vertex, int anotherVertex){
         this.adj[vertex].push(anotherVertex);
         this.numberOfEdges++;
